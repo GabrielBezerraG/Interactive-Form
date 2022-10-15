@@ -1,0 +1,41 @@
+.form {
+   padding: 5.75rem 1.5rem 2.75rem;
+   display: grid;
+   grid-template: repeat(4, auto) / 1fr 1fr;
+   row-gap: 1.4rem;
+}
+
+.form__title {
+   color: var(--dark-violet);
+   font-size: 0.8rem;
+   font-weight: 600;
+   cursor: pointer;
+}
+
+.form__warning {
+   color: var(--red);
+   font-size: 0.75rem;
+   font-weight: 500;
+   letter-spacing: normal;
+   margin-top: 0.6rem;
+   margin-bottom: 0.2rem;
+}
+
+.form__name, .form__number, .form__submit {
+   grid-column: span 2;
+}
+
+.form__name, .form__number, .form__exp-date, .form__cvc {
+   display: flex;
+   flex-direction: column;
+}
+
+.form__exp-date__inputs {
+   display: flex;
+   column-gap: 0.6rem;
+   margin-right: 0.6rem;
+}
+
+.form__submit {
+   margin-top: 0.4rem;
+}

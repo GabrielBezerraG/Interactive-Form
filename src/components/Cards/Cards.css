@@ -1,0 +1,61 @@
+.cards {
+   background: url(../../images/bg-main-mobile.png) center / contain no-repeat;
+   height: 240px;
+   position: relative;
+   color: var(--white);
+}
+
+.cards__back {
+   background: url(../../images/bg-card-back.png) center / contain no-repeat;
+   position: absolute;
+   top: 2rem;
+   right: 0.75rem;
+   height: 160px;
+   width: 300px;
+}
+
+.cards__back__cvc {
+   position: absolute;
+   top: 75px;
+   right: 40px;
+   font-size: 0.55rem;
+}
+
+.cards__front {
+   background: url(../../images/bg-card-front.png) center / contain no-repeat;
+   height: 157px;
+   width: 300px;
+   position: absolute;
+   left: 0.75rem;
+   top: 123px;
+   box-sizing: border-box;
+   padding: 1rem 1.75rem;
+   display: grid;
+   grid-template: 1fr auto auto / 1fr auto;
+   row-gap: 1.25rem;
+}
+
+.cards__front__logo {
+   background: url(../../images/card-logo.svg) center / contain no-repeat;
+   width: 53px;
+   height: 35px;
+   display: inline-block;
+   grid-area: 1/1/2/3;
+}
+
+.cards__front__number {
+   letter-spacing: 2px;
+   grid-area: 2/1/3/3;
+   font-size: 1.1rem;
+}
+
+.cards__front__name {
+   grid-area: 3/1/4/2;
+   font-size: 0.6rem;
+   margin-bottom: 5px;
+}
+
+.cards__front__date {
+   grid-area: 3/2/4/3;
+   font-size: 0.55rem;
+}

@@ -1,0 +1,81 @@
+:root {
+  --white: #FFFFFF;
+  --light-grey: #dedddf;
+  --light-grey-placeholder: #cbc9cc;
+  --dark-grey: #8e8593;
+  --dark-violet: #21092f;
+  --red: #e74747;
+  --gradient: #600594;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+.container {
+  background-color: var(--white);
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+  max-width: 375px;
+  margin: 0 auto;
+  letter-spacing: 1px;
+  color: var(--dark-violet);
+}
+
+.input {
+  font-size: 1.15rem;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.7rem 0.75rem;
+  margin-top: 0.5rem;
+  border: 1px solid var(--light-grey);
+  border-radius: 8px;
+  outline: none;
+}
+
+.input__warning {
+  border-color: var(--red);
+}
+
+.input:focus {
+  border-color: var(--gradient);
+}
+
+.input::placeholder {
+  color: var(--light-grey-placeholder);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+input[type=number] {
+  appearance: textfield;
+}
+
+.button {
+  border: none;
+  font-size: inherit;
+  font-family: inherit;
+  letter-spacing: inherit;
+  background-color: var(--dark-violet);
+  color: var(--white);
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: auto;
+  }
+}
