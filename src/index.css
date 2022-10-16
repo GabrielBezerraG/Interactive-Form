@@ -1,5 +1,6 @@
 :root {
   --white: #FFFFFF;
+  --shadow: #8c8c8c88;
   --light-grey: #dedddf;
   --light-grey-placeholder: #cbc9cc;
   --dark-grey: #8e8593;
@@ -49,15 +50,6 @@ body {
   color: var(--light-grey-placeholder);
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  appearance: none;
-}
-
-input[type=number] {
-  appearance: textfield;
-}
-
 .button {
   border: none;
   font-size: inherit;
@@ -73,9 +65,9 @@ input[type=number] {
 }
 
 
-
 @media screen and (min-width: 1440px) {
   .container {
-    max-width: auto;
+    max-width: 1440px;
+    display: flex;
   }
 }

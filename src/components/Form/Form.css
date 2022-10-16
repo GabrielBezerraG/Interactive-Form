@@ -39,3 +39,11 @@
 .form__submit {
    margin-top: 0.4rem;
 }
+
+@media screen and (min-width: 1440px) {
+   .form {
+      margin: auto 13.25rem auto auto;
+      width: 375px;
+      height: min-content;
+   }
+}

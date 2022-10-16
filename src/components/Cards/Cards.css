@@ -29,10 +29,11 @@
    left: 0.75rem;
    top: 123px;
    box-sizing: border-box;
-   padding: 1rem 1.75rem;
+   padding: 1rem 1.75rem 1.3rem;
    display: grid;
    grid-template: 1fr auto auto / 1fr auto;
    row-gap: 1.25rem;
+   filter: drop-shadow(0 25px 50px var(--shadow));
 }
 
 .cards__front__logo {
@@ -52,10 +53,60 @@
 .cards__front__name {
    grid-area: 3/1/4/2;
    font-size: 0.6rem;
-   margin-bottom: 5px;
 }
 
 .cards__front__date {
    grid-area: 3/2/4/3;
    font-size: 0.55rem;
+}
+
+@media screen and (min-width: 1440px) {
+   .cards {
+      background-image: url(../../images/bg-main-desktop.png);
+      height: 900px;
+      width: 483px;
+   }
+
+   .cards__back {
+      width: 447px;
+      height: 245px;
+      top: 29.25rem;
+      left: 16rem;
+   }
+
+   .cards__back__cvc {
+      top: 115px;
+      right: 60px;
+      font-size: 0.85rem;
+   }
+
+   .cards__front {
+      padding: 1.6rem 1.75rem;
+      width: 447px;
+      height: 245px;
+      top: 11.5rem;
+      left: 10.25rem;
+      row-gap: 2rem;
+   }
+
+   .cards__front, .cards__back {
+      filter: drop-shadow(-15px 15px 50px var(--shadow));
+   }
+
+   .cards__front__logo {
+      width: 85px;
+      height: 50px;
+   }
+
+   .cards__front__number {
+      font-size: 1.75rem;
+   }
+
+   .cards__front__name {
+      font-size: 0.9rem;
+   }
+
+   .cards__front__date {
+      font-size: 0.85rem;
+   }
 }

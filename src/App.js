@@ -12,6 +12,8 @@ import validateName from './js-modules/validateName';
 import validateNumber from './js-modules/validateNumber';
 import './reset.css';
 
+
+
 const initialState = {
   name: '',
   number: '',
@@ -38,7 +40,6 @@ const initialState = {
 class App extends React.Component {
   constructor(props) {
     super(props);
-    
     this.state = initialState;
 
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -63,11 +64,11 @@ class App extends React.Component {
       errorMessage: errorMessage
     });
 
-    let allInputsValid = [];
+    let allInputsAreValid = [];
     for (let key in validity) {
-      allInputsValid.push(validity[key])
+      allInputsAreValid.push(validity[key])
     }
-    if (allInputsValid.every(item => item)) {
+    if (allInputsAreValid.every(item => item)) {
       this.setState({
         confirmed: true
       })
