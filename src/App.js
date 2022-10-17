@@ -93,6 +93,7 @@ class App extends React.Component {
         break;
       case 'cvc':
         newInput = formatCvc(inputValue);
+        break;
     }
 
     this.setState({
